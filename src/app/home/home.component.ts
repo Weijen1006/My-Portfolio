@@ -1,4 +1,5 @@
 import { Component, signal } from '@angular/core';
+import { APP_NAME } from '@/config/constants';
 
 @Component({
   selector: 'app-home',
@@ -8,5 +9,5 @@ import { Component, signal } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
- myAppTitle = signal<string>('Portfolio')
+ myAppTitle = signal<string>(APP_NAME)
 }

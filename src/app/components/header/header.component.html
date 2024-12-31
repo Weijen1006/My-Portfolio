@@ -1,16 +1,18 @@
-<nav>
-    <ul nz-menu nzMode="horizontal">
-        <li nz-menu-item routerLink="">
-            Home
-        </li>
-        <li nz-menu-item routerLink="/about" (click)="onClickAbout()">
-            About
-        </li>
-        <li nz-menu-item>
-            TechStack
-        </li>
-        <li nz-menu-item>
-            Contact
-        </li>
-    </ul>
-</nav>
+<header>
+    <nav>
+        <ul nz-menu nzMode="horizontal">
+            <li nz-menu-item routerLink='/' [nzSelected]="isActiveRoute('/')">
+                Home
+            </li>
+            <li nz-menu-item routerLink='/about' (click)="onClickAbout()" [nzSelected]="isActiveRoute('/about')">
+                About
+            </li>
+            <li nz-menu-item [nzSelected]="isActiveRoute('/tech')">
+                TechStack
+            </li>
+            <li nz-menu-item routerLink='/contact' [nzSelected]="isActiveRoute('/contact')">
+                Contact
+            </li>
+        </ul>
+    </nav>
+</header>
