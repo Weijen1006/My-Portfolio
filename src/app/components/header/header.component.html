@@ -1,13 +1,13 @@
 <header>
     <nav>
-        <ul nz-menu nzMode="horizontal">
+        <ul nz-menu nzMode="horizontal" class="">
             <li nz-menu-item routerLink='/' [nzSelected]="isActiveRoute('/')">
                 Home
             </li>
             <li nz-menu-item routerLink='/about' (click)="onClickAbout()" [nzSelected]="isActiveRoute('/about')">
                 About
             </li>
-            <li nz-menu-item [nzSelected]="isActiveRoute('/tech')">
+            <li nz-menu-item routerLink='/techstack' [nzSelected]="isActiveRoute('/techstack')">
                 TechStack
             </li>
             <li nz-menu-item routerLink='/contact' [nzSelected]="isActiveRoute('/contact')">

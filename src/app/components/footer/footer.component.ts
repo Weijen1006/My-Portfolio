@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
+import { OWNER_NAME } from '@/config/constants';
 
 @Component({
   selector: 'app-footer',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
-
+  myName = signal(OWNER_NAME)
 }
